@@ -27,9 +27,15 @@
                 }
             }
 
-            const playerSelection = 'rock'
-            const computerSelection = computerPlay()
-            console.log(playRound(playerSelection, computerSelection))
+            function game() {
+                let games = 0; 
+                while (games < 5) {
+                    let playerSelection = prompt('CHOOSE YOUR FIGHTER!!!1!!111');
+                    const computerSelection = computerPlay();
+                    console.log(playRound(playerSelection, computerSelection));
+                    games++;
+                }
+            }
         </script>
     </body>
 </html>
